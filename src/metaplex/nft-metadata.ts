@@ -27,7 +27,7 @@ if(process.env.IMG_URI == undefined) {
     //json scheme : https://www.metaplex.com/docs/smart-contracts/core/json-schema
     //change the metadata
     const metadata = {
-        "name": "carlitox477 NFT",
+        "name": "#2 carlitox477 NFT",
         "description": "Unique NFT by carlitox477.",
         "image": image,
         "attributes": [

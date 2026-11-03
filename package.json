@@ -25,6 +25,7 @@
     "spl:metadata": "tsx src/spl/spl-metadata.ts",
     "nft:image": "tsx src/metaplex/nft-image.ts",
     "nft:metadata": "tsx src/metaplex/nft-metadata.ts",
-    "nft:mint": "tsx src/metaplex/nft-mint.ts"
+    "nft:mint": "tsx src/metaplex/nft-mint.ts",
+    "nft:update": "tsx src/metaplex/nft-update.ts"
   }
 }

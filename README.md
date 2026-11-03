@@ -22,15 +22,15 @@
         4. [ATA](https://explorer.solana.com/address/2mqtNpct6bEctwHyVXz34sXppPrXo3eCU6XBLJbgJuTo?cluster=devnet) 
     2. [Token transfer](https://solscan.io/tx/44gmwmmFqSsdrdU4gLa7Dd4fycBowjx2zXBtyLoRFWNVrDyVU941hLsuEa2nK48QRwR5336HsJ8PuF5WJifWasj9?cluster=devnet)
 2. Mint an NFT using MPL Core.
+    1. [NFT account](https://explorer.solana.com/address/6KJfGGPw6tWws6JQ6pG1dbwTTQkWJqtSVQD1ySQtgg3W?cluster=devnet)
+    2. [NFT mint transaction](http://explorer.solana.com/tx/Z1koZHmhYNZjBZutcDnhbJmZPFGP8TTz4aX9HZivdEQT7GgJ7ZW16dJuNZ9KMhykExJegn58mE9oQqiMZ4zsavf?cluster=devnet)
 3. Update the NFT's name and metadata as the update authority
+    1. [2° NFT minted](https://explorer.solana.com/address/4UEcuGwqMHg7AH2rXzF8rnRR5WEFBm8RgLthQLJBxqBt?cluster=devnet)
+    2. [2° NFT mint transaction](https://explorer.solana.com/tx/3EEAy8JN99mS1vPPcn9KQz3yoXqFdxFte3Xqt4uT5U8weKUiRLBeJVxarPPhg8sAT17nxVhKBd4oyycaWvXALYWB?cluster=devnet)
+    3. [2° NFT update transaction](https://explorer.solana.com/tx/3nh75snS6B4RHP6GV8dbT7a9ozdHCaHxZXJu2N47aB8tvZ1s4xv2XqtqEjyGtiWRrmEmURkB5JRirt2scPQCuSwP?cluster=devnet)
 
-## 
-```bash
-MINT_ACCOUNT="GoKkz4Qtm4b5nnrYBDYzQDNSnYBiSBsSfirEubnDsqp5"
-ATA_ACCOUNT="2mqtNpct6bEctwHyVXz34sXppPrXo3eCU6XBLJbgJuTo"
-NFT_IMG="/workspaces/turbin3-task1/img/carlitox-nft.jpg"
-IMG_URI="https://gateway.irys.xyz/5A23nMYSdpnb72Td1DU6fiv8tNvL35dtrRRZdNo572dA"
-NFT_MINT_ACCOUNT="CojmKkqNzqAnnBCGCmXFrgkmSbdY6LqHi7fuDMHLgZPZ"
-METADATA_URI="https://gateway.irys.xyz/i4vgfnhmEWy9dUd2BxPK9Fcf4uoca9dSJXPLraDmr6J"
-```
+Optional:
+1. Transfer the NFT ownership between wallets: [Transfer transaction](https://explorer.solana.com/tx/3PgryCa7iKsJKw1V23rq7JYctQ8mu2gHxeCkzMy6sYjSbq76W98qNxwU3SLBty6QATuknD2TuvQZ2caVN85sH8HH?cluster=devnet)
+2. Permanently destroy the NFT and reclaim the rent fees: [Burn transaction](https://explorer.solana.com/tx/4ck75DNDL5rzEjwvDKxvJMtebs7qkahNPzWKqDRd7gAzSu39tYb4CgJRLe1EK9dPuUd4gEoJMTp6RPnunvyZtd6b?cluster=devnet)
+
 
