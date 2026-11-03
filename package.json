@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@metaplex-foundation/mpl-core": "^1.10.0",
+    "@metaplex-foundation/mpl-token-metadata": "^3.4.0",
+    "@metaplex-foundation/mpl-token-metadata-kit": "^0.0.3",
+    "@metaplex-foundation/umi": "^1.6.0",
+    "@metaplex-foundation/umi-bundle-defaults": "^1.6.0",
+    "@solana-program/token": "^0.18.0",
+    "@solana/kit": "^8.6.0",
+    "@solana/kit-plugin-rpc": "^0.23.0",
+    "@solana/kit-plugin-signer": "^0.23.0",
+    "bs58": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "spl:init": "tsx src/spl/spl-init.ts",
+    "spl:create-ata": "tsx src/spl/spl-create-ata.ts",
+    "spl:mint": "tsx src/spl/spl-mint.ts",
+    "spl:metadata": "tsx src/spl/spl-metadata.ts",
+    "nft:image": "tsx src/nft/nft_image.ts",
+    "nft:metadata": "tsx src/nft/nft_metadata.ts",
+    "nft:mint": "tsx src/nft/nft_mint.ts"
+  }
+}
