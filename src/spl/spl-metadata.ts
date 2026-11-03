@@ -11,19 +11,11 @@ import {
   CreateMetadataAccountV3InstructionArgs,
   DataV2Args,
 } from "@metaplex-foundation/mpl-token-metadata";
+import {getWalletAndRpcUMI} from "../helpers/getWalletAndRpcUMI";
 
 
-const umi = createUmi("https://api.devnet.solana.com");
-
-if(process.env.DEVNET_SOLANA_PK == undefined){
-  throw new Error("DEVNET_SOLANA_PK is not defined in the environment variables");
-}
-
-const secretKey = base58.serialize(process.env.DEVNET_SOLANA_PK);
-const keypair = umi.eddsa.createKeypairFromSecretKey(secretKey);
-const signer = createSignerFromKeypair(umi, keypair);
+const { umi, signer } = getWalletAndRpcUMI();
 umi.use(signerIdentity(signer));
-
 
 
 if(process.env.MINT_ACCOUNT == undefined){

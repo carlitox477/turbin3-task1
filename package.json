@@ -5,6 +5,7 @@
     "@metaplex-foundation/mpl-token-metadata-kit": "^0.0.3",
     "@metaplex-foundation/umi": "^1.6.0",
     "@metaplex-foundation/umi-bundle-defaults": "^1.6.0",
+    "@metaplex-foundation/umi-uploader-irys": "^1.6.0",
     "@solana-program/token": "^0.18.0",
     "@solana/kit": "^8.6.0",
     "@solana/kit-plugin-rpc": "^0.23.0",
@@ -22,8 +23,8 @@
     "spl:create-ata": "tsx src/spl/spl-create-ata.ts",
     "spl:mint": "tsx src/spl/spl-mint.ts",
     "spl:metadata": "tsx src/spl/spl-metadata.ts",
-    "nft:image": "tsx src/nft/nft_image.ts",
-    "nft:metadata": "tsx src/nft/nft_metadata.ts",
-    "nft:mint": "tsx src/nft/nft_mint.ts"
+    "nft:image": "tsx src/metaplex/nft-image.ts",
+    "nft:metadata": "tsx src/metaplex/nft-metadata.ts",
+    "nft:mint": "tsx src/metaplex/nft-mint.ts"
   }
 }
