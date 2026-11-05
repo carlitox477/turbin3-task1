@@ -1,7 +1,9 @@
 # Turbin3 - Task 1
 Repository solving task 1 from Turbin3 Cohort 2026 Q4.
 
-To run the scripts, we must set the `DEVNET_SOLANA_PK` environment variable in the `.env` file to the deployer's private key using `export $(grep -v '^#' .env | xargs)"`.
+[Suggested lecture](https://hackmd.io/@carlitox477/B145hMY6zg) before going deep into this repository: 
+
+In order to run different solution we must variable `DEVNET_SOLANA_PK` to private key from deployer in file`.env` with `export $(grep -v '^#' .env | xargs)"`
 
 ## Tasks
 1. Mint and transfer your own SPL token
@@ -25,18 +27,20 @@ Optional:
 
 
 ## SPL scripts
-| Command                  | Description                                         |
-|--------------------------|-----------------------------------------------------|
-| `npm run spl:init`       | Initialize a mint account through SPL Token Program |
-| `npm run spl:create-ata` | Creates an ATA to mint authority                    |
-| `npm run spl:mint`       | Mints 10 tokens to mint authority ATA               |
-| `npm run spl:metadata`   | Create metadata account associated to mint account  |
+| Command                  | Description                                         | Preconditions                                                    |
+|--------------------------|-----------------------------------------------------|------------------------------------------------------------------|
+| `npm run spl:init`       | Initialize a mint account through SPL Token Program | Env variable `MINT_ACCOUNT` MUST NOT be defined                  |
+| `npm run spl:create-ata` | Creates an ATA to mint authority                    | Env variable `MINT_ACCOUNT` MUST be defined                      |
+| `npm run spl:mint`       | Mints 10 tokens to mint authority ATA               | Env variables `MINT_ACCOUNT` and `ATA_ACCOUNT` MUST be defined   |
+| `npm run spl:metadata`   | Create metadata account associated to mint account  | Env variable `MINT_ACCOUNT` MUST be defined                      | 
 
 ## NFT
-1. Set env variable `DEVNET_SOLANA_PK` to private key deployer with `export $(grep -v '^#' .env | xargs)"` 
-2. Run `npm run nft:image` to upload NFT image
-3. Run `npm run nft:metadata` to upload NFT metadata
-4. Run `npm run nft:mint` to mint NFT
+| Command                | Description                                                  | Preconditions                                         |
+|------------------------|--------------------------------------------------------------|-------------------------------------------------------|
+| `npm run nft:image`    | Upload image to `https://devnet.irys.xyz/`                   | Env variable `NFT_IMG` MUST NOT be defined            |
+| `npm run nft:metadata` | Upload metadata in JSON format to `https://devnet.irys.xyz/` | Env variable `IMG_URI` MUST NOT be defined            |
+| `npm run nft:mint`     | Mint NFT                                                     | Env variable `METADATA_URI` MUST NOT be defined       |
+| `npm run nft:update`   | Update NFT metadata                                          | Env variable `NFT_MINT_ACCOUNT_2` MUST NOT be defined |
 
 ## Tasks
 1. Mint and transfer your own SPL token
